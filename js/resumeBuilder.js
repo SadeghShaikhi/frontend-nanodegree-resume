@@ -1,4 +1,5 @@
-$("#main").append('Sadegh Shaikhi');
+var formattedName =HTMLheaderName.replace("%data%", "Sadegh Shaikhi");
+var formattedRole = HTMLheaderRole.replace("%data%", "Web Developer");
 
-var awesomThoughts = "I am Sadegh and I am Awesome!";
-console.log(awesomThoughts);
+$('#header').prepend( formattedName );
+$('#header').append( formattedRole );
